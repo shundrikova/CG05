@@ -1,0 +1,9 @@
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\bin\Release\LSystems.exe.config
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\bin\Release\LSystems.exe
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\bin\Release\LSystems.pdb
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Release\LSystems.Form1.resources
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Release\LSystems.Properties.Resources.resources
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Release\LSystems.csproj.GenerateResource.Cache
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Release\LSystems.exe
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Release\LSystems.pdb
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Release\LSystems.csprojResolveAssemblyReference.cache

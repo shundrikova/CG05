@@ -1,0 +1,18 @@
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Debug\LSystems.exe.config
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Debug\LSystems.exe
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Debug\LSystems.pdb
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Debug\LSystems.csprojResolveAssemblyReference.cache
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Debug\LSystems.Form1.resources
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Debug\LSystems.Properties.Resources.resources
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Debug\LSystems.csproj.GenerateResource.Cache
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Debug\LSystems.exe
+c:\users\sasha\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Debug\LSystems.pdb
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\bin\Debug\LSystems.exe.config
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.exe
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.pdb
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\bin\Debug\LSystems.exe
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\bin\Debug\LSystems.pdb
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.csprojResolveAssemblyReference.cache
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.Form1.resources
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.Properties.Resources.resources
+C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.csproj.GenerateResource.Cache
