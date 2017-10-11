@@ -13,18 +13,16 @@ namespace LSystems
 {
     public partial class Form1 : Form
     {
-        //Dictionary<char, string> rules;
         List<Tuple<char, string>> rules;
         string axiom;
-        int angle;
+        double angle;
         string direction;
         int iterations;
         private string file;
         string[] parameters;
-        //string path;
         Stack<Tuple<double, double, double, double>> cache;
-        double startx = 10.0, starty = 10.0;
-        double scale;
+        //double startx = 10.0, starty = 10.0;
+        //double scale;
         Graphics g;
 
         public Form1()
@@ -34,13 +32,11 @@ namespace LSystems
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //rules = new Dictionary<char, string>();
             rules = new List<Tuple<char, string>>();
 
             Image bi = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             g = Graphics.FromImage(bi);
             g.Clear(Color.White);
-            //g.Dispose();
             if (pictureBox1.Image != null)
                 pictureBox1.Image.Dispose();
             pictureBox1.Image = bi;
@@ -63,7 +59,6 @@ namespace LSystems
                 StreamReader sr = new StreamReader(file.ToString());
                 textBox1.Text = sr.ReadToEnd();
                 sr.Close();
-                //Text += ' ' + System.IO.Path.GetFileName(file);
                 openFileDialog1.FileName = System.IO.Path.GetFileName(file);
                 generate.Enabled = true;
                 rules.Clear();
@@ -80,7 +75,6 @@ namespace LSystems
             while ((line = sr.ReadLine()) != null)
             {
                 string[] rule = line.Split('>');
-                //rules.Add(Convert.ToChar(rule[0]), rule[1]);
                 rules.Add(new Tuple<char, string>(Convert.ToChar(rule[0]), rule[1]));
             }
         }
@@ -122,8 +116,7 @@ namespace LSystems
                 case "Up":
                     x = pictureBox1.Width / 2;
                     y = pictureBox1.Height;
-                    dx = 0;
-                    //scale / Math.Pow(2, iterations)
+                    dx = 0;)
                     dy = -(pictureBox1.Height/ Math.Pow(2, iterations + 2));
                     break;
                 case "Down":
@@ -183,7 +176,7 @@ namespace LSystems
             g.Clear(Color.White);
             iterations = (int)numericUpDown1.Value;
             axiom = parameters[0];
-            angle = Convert.ToInt32(parameters[1]);
+            angle = Convert.ToDouble(parameters[1]);
             direction = parameters[2];
             makePath();
             pictureBox1.Refresh();

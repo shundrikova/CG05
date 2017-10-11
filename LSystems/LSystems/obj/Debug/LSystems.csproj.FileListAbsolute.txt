@@ -16,3 +16,12 @@ C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.csprojR
 C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.Form1.resources
 C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.Properties.Resources.resources
 C:\Users\Sasha\Desktop\Учебка\LSystems\LSystems\obj\Debug\LSystems.csproj.GenerateResource.Cache
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\bin\Debug\LSystems.exe.config
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\obj\Debug\LSystems.exe
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\obj\Debug\LSystems.pdb
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\bin\Debug\LSystems.exe
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\bin\Debug\LSystems.pdb
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\obj\Debug\LSystems.csprojResolveAssemblyReference.cache
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\obj\Debug\LSystems.Form1.resources
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\obj\Debug\LSystems.Properties.Resources.resources
+C:\Users\Sasha\Documents\GitHub\CG05\LSystems\LSystems\obj\Debug\LSystems.csproj.GenerateResource.Cache
