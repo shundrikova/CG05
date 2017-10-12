@@ -21,8 +21,6 @@ namespace LSystems
         private string file;
         string[] parameters;
         Stack<Tuple<double, double, double, double>> cache;
-        //double startx = 10.0, starty = 10.0;
-        //double scale;
         Graphics g;
 
         public Form1()
@@ -110,13 +108,15 @@ namespace LSystems
 
         private void drawLSystem(string ls)
         {
-            double x = 0, y = 0, dx = 10, dy = 10;
+            double x = 0, y = 0, dx = 0, dy = 0;
+            List<double> lx = new List<double>();
+            List<double> ly = new List<double>();
             switch (direction)
             {
                 case "Up":
                     x = pictureBox1.Width / 2;
                     y = pictureBox1.Height;
-                    dx = 0;)
+                    dx = 0;
                     dy = -(pictureBox1.Height/ Math.Pow(2, iterations + 2));
                     break;
                 case "Down":
@@ -138,15 +138,19 @@ namespace LSystems
                     dy = 0;
                     break;
             }
+            lx.Add(x); ly.Add(y);
             double rx, ry;
             Pen pen = new Pen(Color.Black);
+            List<Tuple<double, double, double, double>> path = new List<Tuple<double, double, double, double>>();
             for (int i = 0; i < ls.Length; i++)
             {
                 switch (ls[i])
                 {
                     case 'F':
-                        g.DrawLine(pen, (float)x, (float)y, (float)(x + dx), (float)(y + dy));
+                        //g.DrawLine(pen, (float)x, (float)y, (float)(x + dx), (float)(y + dy));
+                        path.Add(new Tuple<double, double, double, double>(x, y, x + dx, y + dy));
                         x += dx; y += dy;
+                        lx.Add(x); ly.Add(y);
                         break;
                     case '+':
                         rx = dx; ry = dy;
@@ -168,6 +172,18 @@ namespace LSystems
                         break;
                     default: break;
                 }
+            }
+
+            double xmax = lx.Max(); double xmin = lx.Min();
+            double ymax = ly.Max(); double ymin = ly.Min();
+            double xscale = Math.Abs(xmax - xmin) / pictureBox1.Width;
+            double yscale = Math.Abs(ymax - ymin) / pictureBox1.Height;
+            double scale = Math.Max(xscale, yscale);
+            for (int i = 0; i < path.Count; ++i)
+            {
+                double nx = path[i].Item1 * scale + xmin;
+                double ny = path[i].Item2 * scale + ymin;
+                g.DrawLine(pen, (float)(path[i].Item1), (float)(path[i].Item2), (float)(path[i].Item3), (float)(path[i].Item4));
             }
         }
 
