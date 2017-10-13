@@ -113,13 +113,13 @@ namespace LSystems
             List<double> ly = new List<double>();
             switch (direction)
             {
-                case "Up":
+                case "Down":
                     x = pictureBox1.Width / 2;
                     y = pictureBox1.Height;
                     dx = 0;
                     dy = -(pictureBox1.Height/ Math.Pow(2, iterations + 2));
                     break;
-                case "Down":
+                case "Up":
                     x = pictureBox1.Width / 2;
                     y = 0;
                     dx = 0;
@@ -176,15 +176,14 @@ namespace LSystems
 
             double xmax = lx.Max(); double xmin = lx.Min();
             double ymax = ly.Max(); double ymin = ly.Min();
-            double xscale = Math.Abs(xmax - xmin) / pictureBox1.Width;
-            double yscale = Math.Abs(ymax - ymin) / pictureBox1.Height;
-            double scale = Math.Max(xscale, yscale);
+
+            double scale = Math.Max((ymax - ymin), (xmax - xmin));
+
             for (int i = 0; i < path.Count; ++i)
-            {
-                double nx = path[i].Item1 * scale + xmin;
-                double ny = path[i].Item2 * scale + ymin;
-                g.DrawLine(pen, (float)(path[i].Item1), (float)(path[i].Item2), (float)(path[i].Item3), (float)(path[i].Item4));
-            }
+                g.DrawLine(pen, (float)((path[i].Item1 - xmin) / scale * (pictureBox1.Width - 3)),
+                                (float)((ymax - path[i].Item2) / scale * (pictureBox1.Height - 3)),
+                                (float)((path[i].Item3 - xmin) / scale * (pictureBox1.Width - 3)),
+                                (float)((ymax - path[i].Item4) / scale * (pictureBox1.Height - 3)));
         }
 
         private void generate_Click(object sender, EventArgs e)
